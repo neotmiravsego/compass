@@ -1,0 +1,19 @@
+- var headerNavItems = ['Купить', 'Снять', 'Наши']
+html
+  head
+    title Welcome to Ukyo
+    link(href="https://fonts.googleapis.com/css?family=Fira+Sans:400,700&display=swap" rel="stylesheet")
+  body
+    .container1
+      include components/header.pug
+      section.hero__section
+        .hero__img__wrap
+          img(src="assets/images/compass-development-logo.png" alt="")
+      section.developments
+        .developments__container
+          .developments__title__wrap
+            h2.developments__title Discover Our New Developments
+            p.developments__title__description Compass brings a modern approach to new development marketing and sales. From boutique rental conversions to luxurious ground-up condominiums, browse our portfolio of current offerings.
+            button.contact__button Contact The Team
+          include components/developmentsList.pug
+      include components/footer.pug

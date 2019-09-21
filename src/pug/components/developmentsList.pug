@@ -1,0 +1,24 @@
+- 
+  var complexes = [{
+    img: 'assets/images/bitmap.png',
+    address:  'Якиманка, ул. Большая Полянка',
+    title: 'Полянка/44',
+    description: 'Садовые Кварталы — жилой комплекс в Хамовниках. На территории — четыре жилых квартала, двухуровневая торговая галерея, школа, парк и большой пруд.'
+  },{
+    img: 'assets/images/bitmap.png',
+    address: 'Хамовники, ул. Ефремова',
+    title: 'Садовые Кварталы',
+    description: 'Садовые Кварталы — жилой комплекс в Хамовниках. На территории — четыре жилых квартала, двухуровневая торговая галерея, школа, парк и большой пруд.'
+  },{
+    img: 'assets/images/bitmap.png',
+    address: 'Басманный, ул. Нижняя Красносельская',
+    title: 'TriBeCa Apartments',
+    description: 'TriBeCa Apartments — это жилой комплекс с квартирами премиум и бизнес-класса. Корпуса спроектированы в стиле ар-деко и похожи на здания Нью-Йорка.'
+  }]
+ul.developments__list
+  each complex in complexes
+    - var cardImage = complex.img
+    - var cardAddress = complex.address
+    - var cardTitle = complex.title
+    - var cardDescription = complex.description
+    include card.pug
